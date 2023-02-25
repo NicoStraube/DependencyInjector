@@ -1,0 +1,4 @@
+name: DependencyLoader
+version: 1.0
+author: NStraube
+main: de.nico_straube.mc.dependencyloader.PluginBootstrap
