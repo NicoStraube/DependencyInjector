@@ -1,13 +1,12 @@
 package de.nico_straube.mc.dependencyloader
 
-import de.nico_straube.mc.dependencyloader.notification.Message
-import de.nico_straube.mc.dependencyloader.notification.Notification
+import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.plugin.java.JavaPlugin
 
 class PluginBootstrap : JavaPlugin() {
 
     override fun onEnable() {
-        Notification(Message.PLUGIN_LOADED).send(server.consoleSender)
+        server.consoleSender.sendMessage(MiniMessage.miniMessage().deserialize("<gray>[<yellow>!<gray>] <grey>Loaded libraries and dependencies into classpath."))
     }
 
 }
