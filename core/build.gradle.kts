@@ -31,7 +31,7 @@ tasks.withType<ShadowJar> {
         copy {
             // println("${archiveBaseName.get()}-${archiveVersion.get()}-all.jar")
             from("build/libs/${archiveBaseName.get()}-${archiveVersion.get()}-all.jar")
-            into("../../plugins/")
+            into("../../../plugins/")
         }
     }
 }
