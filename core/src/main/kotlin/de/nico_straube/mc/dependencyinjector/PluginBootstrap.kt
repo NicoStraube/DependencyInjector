@@ -1,4 +1,4 @@
-package de.nico_straube.mc.dependencyloader
+package de.nico_straube.mc.dependencyinjector
 
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.plugin.java.JavaPlugin

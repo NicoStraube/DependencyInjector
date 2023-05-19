@@ -1,4 +1,4 @@
-name: DependencyLoader
+name: DependencyInjector
 version: 1.0
 author: NStraube
-main: de.nico_straube.mc.dependencyloader.PluginBootstrap
+main: de.nico_straube.mc.dependencyinjector.PluginBootstrap

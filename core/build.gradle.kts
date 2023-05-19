@@ -22,7 +22,7 @@ dependencies {
 }
 
 tasks.withType<ShadowJar> {
-    archiveBaseName.set("DependencyLoader")
+    archiveBaseName.set("DependencyInjector")
     archiveVersion.set(version.toString())
 
     dependencies {
