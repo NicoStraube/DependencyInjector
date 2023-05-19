@@ -1,0 +1,22 @@
+[versions]
+kotlin = "1.8.20"
+paper = "1.19.4-R0.1-SNAPSHOT"
+
+
+[libraries]
+paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+
+
+[bundles]
+kotlin = ["kotlin-stdlib", "kotlin-reflect", "kotlin-serialization"]
+
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+shadow = { id = "com.github.johnrengelman.shadow", version = "7.1.2" }
